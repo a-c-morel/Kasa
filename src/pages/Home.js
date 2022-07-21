@@ -1,10 +1,13 @@
 import React from "react"
 import '../index.css'
+import Navbar from "../components/Navbar"
+import Header from "../components/Header"
 
 export default function Home() {
     return (
-      <div className="home">
-        <h1>Home</h1>
-      </div>
+      <>
+      <Navbar />
+      <Header />
+      </>
     )
 }
