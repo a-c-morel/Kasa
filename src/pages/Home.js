@@ -7,7 +7,7 @@ export default function Home() {
     return (
       <>
       <Navbar />
-      <Header />
+      <Header headTitle="Chez vous, partout et ailleurs"/>
       </>
     )
 }
