@@ -1,10 +1,10 @@
 import React from "react"
 import '../index.css'
 
-export default function Card() {
+export default function Card({title}) {
     return (
         <article className="card">
-            <p>card-title</p>
+            <p>{title}</p>
         </article>
     );
 }
