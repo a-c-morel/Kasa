@@ -4,11 +4,12 @@ import '../index.css'
 
 export default function Header({headTitle}) {
     return (
-        <header>
-            {/*<img src={image à importer} alt="logo" width="500" className="logo"/>*/}
-            <h1>
-                {headTitle}
-            </h1>
+        <header className="head-title">
+            <div className="mask">
+                <h1>
+                    {headTitle}
+                </h1>
+            </div>
         </header>
 );
 }
