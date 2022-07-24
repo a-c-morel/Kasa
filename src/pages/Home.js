@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Header from "../components/Header"
 import accomodations from "../assets/accomodations.json"
 import Card from "../components/Card"
+import {Link} from "react-router-dom"
 //import Collapse from "../components/Collapse"
 
 export default function Home() {
@@ -14,8 +15,11 @@ export default function Home() {
       {
         accomodations.map(
           accomodation => {
+            let whereTo = `/fiche-logement/`+ accomodation.id
             return(
-              <Card title={accomodation.title} key={accomodation.id}/>
+              <Link to={whereTo}>
+                <Card title={accomodation.title} key={accomodation.id}/>
+              </Link>
             )
           }
         )
