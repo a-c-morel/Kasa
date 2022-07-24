@@ -20,9 +20,6 @@ export default function Home() {
           }
         )
       }
-      {/*<Collapse collapseTitle="Titre de mon collapse">
-        <li>Test</li>
-    </Collapse>*/}
       </>
     )
 }
