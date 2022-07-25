@@ -10,12 +10,21 @@ export default function Accomodation({data}) {
       <div>
         <Navbar />
         {data.filter(accomodation => accomodation.id === id).map((accomodation, id) => (
-          <h1 key={id}>{accomodation.title}</h1>
+          <section className="accomodation-info">
+            <div className="flex-row-space-between">
+              <h1 key={id}>{accomodation.title}</h1>
+              <div className="flex-row-space-between">
+                <p key={id+accomodation.host.name}>{accomodation.host.name}</p>
+                <img src={accomodation.host.picture} alt="profil"/>
+              </div>
+              
+            </div>
+            <Collapse collapseTitle="Titre de mon collapse">
+              <li>Test</li>
+            </Collapse>
+          </section>
         ))
         }
-        <Collapse collapseTitle="Titre de mon collapse">
-        <li>Test</li>
-        </Collapse>
       </div>
-    );
+    )
 }
