@@ -11,20 +11,22 @@ import {Link} from "react-router-dom"
 export default function Home() {
     return (
       <>
-      <Navbar />
-      <Header headTitle="Chez vous, partout et ailleurs"/>
-      {
-        accomodations.map(
-          accomodation => {
-            let whereTo = `/fiche-logement/`+ accomodation.id
-            return(
-              <Link to={whereTo} key={accomodation.rating+accomodation.id}>
-                <Card title={accomodation.title} key={accomodation.id}/>
-              </Link>
-            )
-          }
-        )
-      }
+      <div className="main-wrapper">
+        <Navbar />
+        <Header headTitle="Chez vous, partout et ailleurs"/>
+        {
+          accomodations.map(
+            accomodation => {
+              let whereTo = `/fiche-logement/`+ accomodation.id
+              return(
+                <Link to={whereTo} key={accomodation.rating+accomodation.id}>
+                  <Card title={accomodation.title} key={accomodation.id}/>
+                </Link>
+              )
+            }
+          )
+        }
+      </div>
       <Footer />
       </>
     )
