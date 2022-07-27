@@ -4,6 +4,7 @@ import '../index.css'
 import Navbar from "../components/Navbar"
 import Collapse from "../components/Collapse"
 import Gallery from "../components/Gallery"
+import Footer from "../components/Footer"
 import { IoIosStar } from "react-icons/io"
 
 export default function Accomodation({data}) {
@@ -48,6 +49,7 @@ export default function Accomodation({data}) {
           </>
         ))
         }
+        <Footer />
       </div>
     )
 }

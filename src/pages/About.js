@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from "../components/Navbar";
+import Footer from '../components/Footer'
 import '../index.css'
 
 export default function About() {
@@ -7,6 +8,7 @@ export default function About() {
       <div>
         <Navbar />
         <h1>About</h1>
+        <Footer />
       </div>
     );
 }
