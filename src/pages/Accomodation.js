@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import '../index.css'
 import Navbar from "../components/Navbar"
 import Collapse from "../components/Collapse"
+import Gallery from "../components/Gallery"
 import { IoIosStar } from "react-icons/io"
 
 export default function Accomodation({data}) {
@@ -11,12 +12,14 @@ export default function Accomodation({data}) {
       <div>
         <Navbar />
         {data.filter(accomodation => accomodation.id === id).map((accomodation, id) => (
+          <>
+          <Gallery accomodation={accomodation}/>
           <section className="accomodation-info">
-            <h1 className="accomodation-info__title" key={id}>{accomodation.title}</h1>
-            <p className="accomodation-info__location" key={id}>{accomodation.location}</p>
+            <h1 className="accomodation-info__title" key={id+accomodation.title.length}>{accomodation.title}</h1>
+            <p className="accomodation-info__location" key={id+accomodation.location.length}>{accomodation.location}</p>
             <ul className="tags">
               {accomodation.tags.map(tag => {
-                  return <li className="tag" key={accomodation.id.tag}>{tag}</li>
+                  return <li className="tag" key={tag}>{tag}</li>
                 }
               )}
             </ul>
@@ -42,6 +45,7 @@ export default function Accomodation({data}) {
             </div>
             
           </section>
+          </>
         ))
         }
       </div>
