@@ -10,13 +10,13 @@ export default function Gallery({accomodation}) {
         ? pictures.length>1 
             ? (
             <div className="gallery-container">
-            <div id="gallery-arrow__previous" onClick={() => setPosition(pictures.length-1)}>
-                <IoIosArrowBack />
-            </div>
-            <div id="gallery-arrow__next" onClick={() => setPosition(position+1)}>
-                <IoIosArrowForward />
-            </div>
-                <img className="gallery-image" src={pictures[0]} alt="hébergement" />
+                <div id="gallery-arrow__previous" onClick={() => setPosition(pictures.length-1)}>
+                    <IoIosArrowBack />
+                </div>
+                <div id="gallery-arrow__next" onClick={() => setPosition(position+1)}>
+                    <IoIosArrowForward />
+                </div>
+                    <img className="gallery-image" src={pictures[0]} alt="hébergement" />
             </div>
             )
             : (
