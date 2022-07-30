@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 export default function Navbar() {
     return (
         <nav className="navbar">
-            <Link to="/">
+            <Link to="/MORELAdeline_11_20072022">
                 <img src={logo} alt="logo" className="navbar-logo"/>
             </Link>
             <ul className="navbar-menu">

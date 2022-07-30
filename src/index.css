@@ -109,7 +109,7 @@ ul {
   margin: 1.25rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.13rem;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .gallery-container {
@@ -454,24 +454,77 @@ ul {
 
 @media only screen and (min-width: 700px) {
   .main-wrapper {
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem
   }
 }
 
 @media only screen and (min-width: 800px) {
   .main-wrapper {
-    padding: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .main-wrapper {
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .cards-section {
+    padding-right: 3.13rem;
+    padding-left: 3.13rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .main-wrapper {
-    padding: 6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-logo {
+    width: 13.15rem;
+    height: 4.25rem;
+  }
+  .navbar-menu {
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 3.56rem
+  }
+  .head-title {
+    height: 14.56rem;
+    margin-top: 3.94rem;
+  }
+  .head-title h1 {
+    font-size: 3rem;
+  }
+  .cards-section {
+    padding-right: 3.13rem;
+    padding-left: 3.13rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    gap: 3.75rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .cards-section {
+    padding-right: 3.13rem;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 3.5rem;
+    gap: 0;
+  }
+  .card {
+    width: 21.25rem;
+    height: 21.25rem;
+    margin-top: 3.13rem;
+    margin-left: 3.13rem;
   }
 }
