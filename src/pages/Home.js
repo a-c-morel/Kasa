@@ -14,18 +14,20 @@ export default function Home() {
       <div className="main-wrapper">
         <Navbar />
         <Header headTitle="Chez vous, partout et ailleurs"/>
-        {
-          accomodations.map(
-            accomodation => {
-              let whereTo = `/fiche-logement/`+ accomodation.id
-              return(
-                <Link to={whereTo} key={accomodation.rating+accomodation.id}>
-                  <Card title={accomodation.title} key={accomodation.id}/>
-                </Link>
-              )
-            }
-          )
-        }
+        <section className="cards-section">
+          {
+            accomodations.map(
+              accomodation => {
+                let whereTo = `/fiche-logement/`+ accomodation.id
+                return(
+                  <Link to={whereTo} key={accomodation.rating+accomodation.id}>
+                    <Card title={accomodation.title} key={accomodation.id}/>
+                  </Link>
+                )
+              }
+            )
+          }
+        </section>
       </div>
       <Footer />
       </>

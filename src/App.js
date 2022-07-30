@@ -10,7 +10,7 @@ export default function App() {
     return (
       <div>
         <Routes>
-            <Route path="/" element={<Home />}/>
+            <Route path="/MORELAdeline_11_20072022" element={<Home />}/>
             <Route path="/a-propos" element={<About />}/>
             <Route path="/fiche-logement/:id" element={<Accomodation data={accomodations}/>}/>
             <Route path="*" element={<Error404 />} />
