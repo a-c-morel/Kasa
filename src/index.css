@@ -465,6 +465,12 @@ ul {
     padding-left: 2rem;
     padding-right: 2rem
   }
+  .gallery-container {
+    max-height: 18.75rem;
+  }
+  .gallery-image {
+    height: 18.75rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -495,6 +501,12 @@ ul {
   .main-wrapper {
     padding-left: 6.25rem;
     padding-right: 6.25rem;
+  }
+  .gallery-container {
+    max-height: 25.94rem;
+  }
+  .gallery-image {
+    height: 25.94rem;
   }
 }
 
