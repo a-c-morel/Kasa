@@ -173,7 +173,35 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 1.25rem;
-  color: #FF6060
+  color: var(--primary-color)
+}
+
+.flex-container-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.flex-container-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
 }
 
 .accomodation-info__title {
@@ -192,7 +220,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px; /*provisoire*/
+  gap: .63rem;
   margin-top: 1.25rem;
 }
 
@@ -200,7 +228,7 @@ ul {
   font-size: .63rem;
   font-weight: medium;
   text-align: center;
-  background-color: #FF6060;
+  background-color: var(--primary-color);
   color: #FFFFFF;
   padding-top: .14rem;
   padding-right: 1.81rem;
@@ -261,6 +289,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 1.03rem;
 }
 
 .collapse {
@@ -277,7 +306,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #FF6060;
+  background-color: var(--primary-color);
   color: #FFFFFF;
   border-radius: 5px;
   padding-right: 1.13rem;
@@ -366,7 +395,7 @@ ul {
 .not-found__title {
   font-size: 6rem;
   font-weight: bold;
-  color: #FF6060;
+  color: var(--primary-color);
   margin-top: 10rem;
 }
 
@@ -374,30 +403,18 @@ ul {
   font-weight: 500;
   font-size: 1.13rem;
   line-height: 142.6%;
-  color: #FF6060;
+  color: var(--primary-color);
   text-align: center;
 }
 
 .not-found__redirect {
-  color: #FF6060;
+  color: var(--primary-color);
   text-decoration: underline;
   cursor: pointer;
   font-weight: 500;
   font-size: .88rem;
   line-height: 142.6%;
   margin-top: 9rem;
-}
-
-.flex-row-space-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .flex-col {
@@ -471,6 +488,23 @@ ul {
   .gallery-image {
     height: 18.75rem;
   }
+  #gallery-arrow__previous {
+    top: 8.6rem;
+    font-size: 2.5rem;
+  }
+  #gallery-arrow__next {
+    top: 8.6rem;
+    font-size: 2.5rem;
+  }
+  .profile-image-container {
+    max-width: 2.25rem;
+    max-height: 2.25rem;
+  }
+  .profile-image {
+    width: 2.25rem;
+    height: 2.25rem;
+    max-width: 2.25rem;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -478,6 +512,15 @@ ul {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2.5rem;
+  }
+  .profile-image-container {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+  }
+  .profile-image {
+    width: 2.5rem;
+    height: 2.5rem;
+    max-width: 2.5rem;
   }
 }
 
@@ -491,6 +534,38 @@ ul {
     padding-left: 3.13rem;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+  .accomodation-info__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .tag {
+    font-size: .88rem;
+    background-color: var(--primary-color);
+    padding-right: 2.31rem;
+    padding-top: .3rem;
+    padding-bottom: 1.35rem;
+    padding-left: 2.31rem;
+    border-radius: .63rem;
+    max-height: 1.13rem;
+  }
+  .empty-star {
+    font-size: 1.5rem;
+  }
+  .full-star {
+    font-size: 1.5rem
+  }
+  .identity__name {
+    font-size: 1.13rem;
+  }
+  .profile-image-container {
+    max-width: 3rem;
+    max-height: 3rem;
+  }
+  .profile-image {
+    width: 3rem;
+    height: 3rem;
+    max-width: 3rem;
   }
   .footer p {
     font-size: 1.5rem;
@@ -507,6 +582,58 @@ ul {
   }
   .gallery-image {
     height: 25.94rem;
+  }
+  #gallery-arrow__previous {
+    top: 9.33rem;
+    font-size: 4.95rem;
+  }
+  #gallery-arrow__next {
+    top: 9.33rem;
+    font-size: 4.95rem;
+  }
+  .accomodation-info{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-container-second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  .accomodation-info__location {
+    font-size: 1.13rem;
+  }
+  .profile-image-container {
+    max-width: 3.25rem;
+    max-height: 3.25rem;
+  }
+  .profile-image {
+    width: 3.25rem;
+    height: 3.25rem;
+    max-width: 3.25rem;
+  }
+  .collapses-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 4.75rem
+  }
+  .collapse-container {
+    width: 36.38rem;
+  }
+  .collapse-container + .collapse-container {
+    margin-top: 0;
   }
 }
 
@@ -534,6 +661,15 @@ ul {
     padding-bottom: 3.5rem;
     gap: 3.75rem;
   }
+  .profile-image-container {
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+  }
+  .profile-image {
+    width: 3.5rem;
+    height: 3.5rem;
+    max-width: 3.5rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -549,5 +685,20 @@ ul {
     height: 21.25rem;
     margin-top: 3.13rem;
     margin-left: 3.13rem;
+  }
+  .empty-star {
+    font-size: 2.13rem;
+  }
+  .full-star {
+    font-size: 2.13rem
+  }
+  .profile-image-container {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  .profile-image {
+    width: 4rem;
+    height: 4rem;
+    max-width: 4rem;
   }
 }
