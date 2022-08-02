@@ -326,6 +326,8 @@ ul {
   padding-bottom: .75rem;
   padding-left: .72rem;
   font-size: .75rem;
+  font-weight: 400;
+  color: var(--primary-color);
 }
 
 .about-image__wrapper {
@@ -670,6 +672,17 @@ ul {
     height: 3.5rem;
     max-width: 3.5rem;
   }
+  .collapse {
+    height: 2.25rem;
+    font-size: .85rem;
+  }
+  .collapse-content {
+    padding-top: 1.30rem;
+    padding-right: .50rem;
+    padding-bottom: 1.20rem;
+    padding-left: 1rem;
+    font-size: .75rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -700,5 +713,16 @@ ul {
     width: 4rem;
     height: 4rem;
     max-width: 4rem;
+  }
+  .collapse {
+    height: 3.25rem;
+    font-size: 1.13rem;
+  }
+  .collapse-content {
+    padding-top: 1.88rem;
+    padding-right: .75rem;
+    padding-bottom: 1.69rem;
+    padding-left: 1.25rem;
+    font-size: 1.13rem;
   }
 }

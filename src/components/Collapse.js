@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import '../index.css'
-import { FaChevronDown } from "react-icons/fa"
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"
 
 export default function Collapse({collapseTitle, children}) {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +9,7 @@ export default function Collapse({collapseTitle, children}) {
 
     return isOpen ? (
         <div className="collapse-container">
-            <button className="collapse" onClick={() => setIsOpen(false)}>{collapseTitle}<FaChevronDown /></button>
+            <button className="collapse" onClick={() => setIsOpen(false)}>{collapseTitle}<FaChevronUp /></button>
             <ul className="collapse-content">{children}</ul>
         </div>
     ) : (
