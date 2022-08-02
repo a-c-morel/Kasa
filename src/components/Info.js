@@ -28,11 +28,11 @@ export default function Info({id, accomodation}) {
     </section>
 
     <div className="collapses-container">
-      <Collapse collapseTitle="Description">
+      <Collapse className="collapse-container--info" collapseTitle="Description">
         <li>{accomodation.description}</li>
       </Collapse>
 
-      <Collapse collapseTitle="Equipements">
+      <Collapse className="collapse-container--info" collapseTitle="Equipements">
         {accomodation.equipments.map(equipment => {
           return <li key={id+equipment}>{equipment}</li>
         })}

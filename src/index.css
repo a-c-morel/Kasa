@@ -314,7 +314,7 @@ ul {
   font-size: .81rem;
 }
 
-.collapse-container + .collapse-container {
+.collapse-container--info + .collapse-container--info, .collapse-container--about + .collapse-container--about {
   margin-top: 1.25rem;
 }
 
@@ -427,6 +427,15 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -631,10 +640,10 @@ ul {
             flex-direction: row;
     gap: 4.75rem
   }
-  .collapse-container {
+  .collapse-container--info {
     width: 36.38rem;
   }
-  .collapse-container + .collapse-container {
+  .collapse-container--info + .collapse-container--info {
     margin-top: 0;
   }
 }
@@ -671,6 +680,10 @@ ul {
     width: 3.5rem;
     height: 3.5rem;
     max-width: 3.5rem;
+  }
+  .collapse-container--about {
+    margin-left: 6.75rem;
+    margin-right: 6.75rem;
   }
   .collapse {
     height: 2.25rem;
