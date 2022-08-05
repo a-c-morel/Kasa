@@ -18,8 +18,11 @@ export default function Accomodation({data}) {
         </div>
       ))
     ) : (
+      <div>
         <Routes>
-            <Route path="*" element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
+      </div>
+        
     )
 }

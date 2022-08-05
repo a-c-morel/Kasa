@@ -12,7 +12,7 @@ export default function App() {
         <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/a-propos" element={<About />}/>
-            <Route path="/fiche-logement/:id" element={<Accomodation data={accomodations}/>}/>
+            <Route path="/fiche-logement/:id/*" element={<Accomodation data={accomodations}/>}/>
             <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
