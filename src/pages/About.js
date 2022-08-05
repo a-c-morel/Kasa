@@ -1,15 +1,11 @@
 import React from "react"
-import Navbar from "../components/Navbar"
 import Collapse from "../components/Collapse"
-import Footer from '../components/Footer'
 import image from '../assets/about-image.jpg'
 import '../index.css'
 
 export default function About() {
     return (
       <>
-      <div className="main-wrapper">
-        <Navbar />
         <div className="about-image__wrapper">
           <img src={image} alt="kluane national parc et réserve" className="about-image"/>
         </div>
@@ -27,8 +23,6 @@ export default function About() {
             <li>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</li>
           </Collapse>
         </section>
-      </div>
-      <Footer />
       </>
     );
 }

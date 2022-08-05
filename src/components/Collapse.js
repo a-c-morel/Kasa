@@ -9,12 +9,16 @@ export default function Collapse({className, collapseTitle, children}) {
 
     return isOpen ? (
         <div className={className}>
-            <button className="collapse" onClick={() => setIsOpen(false)}>{collapseTitle}<FaChevronUp /></button>
+            <button className="collapse"
+                onClick={() => setIsOpen(false)}>{collapseTitle}<FaChevronUp />
+            </button>
             <ul className="collapse-content">{children}</ul>
         </div>
     ) : (
         <div className={className}>
-        <button className="collapse" onClick={() => setIsOpen(true)}>{collapseTitle}<FaChevronDown /></button>
+            <button className="collapse"
+                onClick={() => setIsOpen(true)}>{collapseTitle}<FaChevronDown />
+            </button>
         </div>
     )
 }

@@ -10,8 +10,18 @@ export default function Navbar() {
                 <img src={logo} alt="logo" className="navbar-logo"/>
             </NavLink>
             <ul className="navbar-menu">
-                <li><NavLink to="/"  className={({ isActive }) => (isActive ? "navbar__link--active" : "navbar__link")}>Accueil</NavLink></li>
-                <li><NavLink to="/a-propos"  className={({ isActive }) => (isActive ? "navbar__link--active" : "navbar__link")}>A Propos</NavLink></li>
+                <li>
+                    <NavLink to="/"  className={
+                        ({ isActive }) => (isActive ? "navbar__link--active" : "navbar__link")
+                        }>Accueil
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/a-propos"  className={
+                        ({ isActive }) => (isActive ? "navbar__link--active" : "navbar__link")
+                        }>A Propos
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     )

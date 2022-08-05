@@ -186,7 +186,7 @@ ul {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
 }
 
 .flex-container-second {

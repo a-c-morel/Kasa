@@ -16,7 +16,7 @@ export default function Gallery({accomodation}) {
                 <div id="gallery-arrow__next" onClick={() => setPosition(position+1)}>
                     <IoIosArrowForward />
                 </div>
-                    <img className="gallery-image" src={pictures[0]} alt="hébergement" />
+                <img className="gallery-image" src={pictures[0]} alt="hébergement" />
             </div>
             )
             : (
@@ -33,6 +33,6 @@ export default function Gallery({accomodation}) {
                 <IoIosArrowForward />
             </div>
             <img className="gallery-image" src={pictures[position]} alt="hébergement" />
-            </div>
+        </div>
             )
 }
