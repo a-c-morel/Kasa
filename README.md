@@ -1,6 +1,8 @@
 # Kasa
 Bienvenue sur le projet 11 de ma formation OpenClassrooms "Développeur d'Application JavaScript REACT". Il s'agit d'un prototype d'application de location d'appartements, créé avec React et React Router. Mon rôle était de développer toute la partie front-end de l'application, à partir de [maquettes](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1) et de [coding guidelines](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf). On me fournissait également un fichier JSON comprenant 20 annonces de logements.
 
+[VOIR LE PROJET FINI](https://morel-adeline-kasa.herokuapp.com/)
+
 ## Objectif
 Le but de ce projet était de développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives) et toutes les infos que l'on m'avait transmises. Et ce avec un code de qualité.
 
