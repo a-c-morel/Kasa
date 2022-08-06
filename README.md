@@ -1,3 +1,21 @@
+# Kasa
+Bienvenue sur le projet 11 de ma formation OpenClassrooms "Développeur d'Application JavaScript REACT". Il s'agit d'un prototype d'application de location d'appartements, créé avec React et React Router. Mon rôle était de développer toute la partie front-end de l'application, à partir de [maquettes](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=4%3A1) et de [coding guidelines](https://course.oc-static.com/projects/Front-End+V2/P9+React+1/Coding+guidelines+Kasa+FR.pdf). On me fournissait également un fichier JSON comprenant 20 annonces de logements.
+
+## Objectif
+Le but de ce projet était de développer l’ensemble de l’application, les composants React, les routes React Router, en suivant les maquettes Figma (responsives) et toutes les infos que l'on m'avait transmises. Et ce avec un code de qualité.
+
+## Autres contraintes fonctionnelles à respecter
+Pour le défilement des photos dans la galerie (composant Gallery) :
+Si l'utilisateur se trouve à la première image et qu'il clique sur "image précédente", la galerie affiche la dernière image. 
+Inversement, quand l'image affichée est la dernière de la galerie, si l'utilisateur clique sur "image suivante", la galerie affiche la première image. 
+S'il n'y a qu'une seule image, les boutons "suivant" et "précédent" n'apparaissent pas.
+La galerie doit toujours rester de la même hauteur, celle indiquée sur la maquette Figma. Les images seront donc coupées et centrées dans le cadre de l’image.
+Collapse : Par défaut, les Collapse sont fermés à l'initialisation de la page. 
+Si le Collapse est ouvert, le clic de l'utilisateur permet de le fermer.
+Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
+
+***
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
