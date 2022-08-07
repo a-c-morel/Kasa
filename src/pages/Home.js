@@ -16,7 +16,7 @@ export default function Home() {
                 let whereTo = `/fiche-logement/`+ accomodation.id
                 return(
                   <Link to={whereTo} key={accomodation.id}>
-                    <Card title={accomodation.title} />
+                    <Card image={accomodation.cover} title={accomodation.title} />
                   </Link>
                 )
               }
