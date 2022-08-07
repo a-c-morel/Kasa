@@ -1,6 +1,5 @@
 import React from "react"
 import '../index.css'
-//import image à importer from '../assets/'
 
 export default function Header({headTitle}) {
     return (

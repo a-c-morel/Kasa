@@ -1,4 +1,5 @@
 import React from 'react'
+import Tag from "../components/Tag"
 import Collapse from "../components/Collapse"
 import RatingStars from './RatingStars'
 
@@ -11,7 +12,7 @@ export default function Info({id, accomodation}) {
           <p className="accomodation-info__location" key={id+accomodation.location.length}>{accomodation.location}</p>
           <ul className="tags">
             {accomodation.tags.map(tag => {
-                return <li className="tag" key={tag}>{tag}</li>
+                return <Tag className="tag" tag={tag} key={tag} />
               }
             )}
           </ul>

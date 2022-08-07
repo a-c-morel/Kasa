@@ -1,8 +1,8 @@
 import React from "react"
 import '../index.css'
 
-export default function Tag() {
+export default function Tag({tag}) {
     return (
-        <li className="tag">tag</li>
+        <li className="tag">{tag}</li>
     );
 }

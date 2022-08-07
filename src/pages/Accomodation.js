@@ -22,7 +22,6 @@ export default function Accomodation({data}) {
         <Routes>
           <Route path="*" element={<Error404 />} />
         </Routes>
-      </div>
-        
+      </div>  
     )
 }
