@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <BrowserRouter>
     <div className="main-wrapper">
-      <Navbar />
+      <Navbar /> {/*Mettre ce composant ici évite de le répéter dans toutes les pages (idem pour le footer)*/}
       <App className="app"/>
     </div>
     <Footer />
