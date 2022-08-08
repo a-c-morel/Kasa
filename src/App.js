@@ -9,7 +9,7 @@ export default function App({data}) {
     return (
       <div>
         <Routes>
-            <Route path="/" element={<Home />}/>
+            <Route path="/" element={<Home data={data} />}/>
             <Route path="/a-propos" element={<About />}/>
             <Route path="/fiche-logement/:id/*" element={<Accomodation data={data}/>}/>
             <Route path="*" element={<Error404 />} />
