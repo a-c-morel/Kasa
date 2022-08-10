@@ -1,4 +1,3 @@
-import React from "react"
 import Collapse from "../components/Collapse"
 import image from '../assets/about-image.jpg'
 

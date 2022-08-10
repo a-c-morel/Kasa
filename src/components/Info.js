@@ -1,4 +1,3 @@
-import React from 'react'
 import Tag from "../components/Tag"
 import Collapse from "../components/Collapse"
 import RatingStars from './RatingStars'

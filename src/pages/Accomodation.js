@@ -1,4 +1,3 @@
-import React from "react"
 import { useParams } from "react-router-dom"
 import Gallery from "../components/Gallery"
 import Info from "../components/Info"

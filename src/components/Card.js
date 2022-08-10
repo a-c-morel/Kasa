@@ -1,5 +1,3 @@
-import React from "react"
-
 export default function Card({image, title}) {
     return (
         <article className="card">

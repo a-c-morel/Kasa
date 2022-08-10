@@ -1,5 +1,3 @@
-import React from "react"
-
 export default function Header({headTitle}) {
     return (
         <header className="head-title">
