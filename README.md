@@ -22,6 +22,10 @@ Inversement, si le Collapse est fermé, un clic permet de l'ouvrir.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+I invite you to read [this documentation](https://github.com/facebook/create-react-app#user-guide) to see the steps before running the sripts below :
+
+(you'll have to initialize create-react-app first, with `npm init react-app my-app`).
+
 ## Available Scripts
 
 In the project directory, you can run:
