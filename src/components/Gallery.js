@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import '../index.css'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 
 export default function Gallery({accomodation}) {

@@ -1,5 +1,4 @@
 import React from "react"
-import '../index.css'
 import Header from "../components/Header"
 import Card from "../components/Card"
 import {Link} from "react-router-dom"

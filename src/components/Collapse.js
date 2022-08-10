@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import '../index.css'
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"
 
 export default function Collapse({className, collapseTitle, children}) {

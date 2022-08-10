@@ -1,7 +1,6 @@
 import React from "react"
 import Collapse from "../components/Collapse"
 import image from '../assets/about-image.jpg'
-import '../index.css'
 
 export default function About() {
     return (
