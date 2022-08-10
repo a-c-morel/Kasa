@@ -16,6 +16,7 @@ export default function Gallery({accomodation}) {
                 <div id="gallery-arrow__next" onClick={() => setPosition(position+1)}>
                     <IoIosArrowForward />
                 </div>
+                <div className="gallery-counter">{(position+1).toString()}/{(pictures.length).toString()}</div>
                 <img className="gallery-image" src={pictures[0]} alt="hébergement" />
             </div>
             )
@@ -32,6 +33,7 @@ export default function Gallery({accomodation}) {
             <div id="gallery-arrow__next" onClick={() => position<pictures.length-1 ? setPosition(position+1) : setPosition(0)}>
                 <IoIosArrowForward />
             </div>
+            <div className="gallery-counter">{(position+1).toString()}/{(pictures.length).toString()}</div>
             <img className="gallery-image" src={pictures[position]} alt="hébergement" />
         </div>
             )
