@@ -2,7 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://a-c-morel.github.io/MORELAdeline_11_20072022",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
